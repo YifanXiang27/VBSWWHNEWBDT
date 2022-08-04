@@ -1,1 +1,2 @@
 # VBSWWHNEWBDT
+sh test.sh
