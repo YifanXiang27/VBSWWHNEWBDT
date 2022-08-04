@@ -1,0 +1,335 @@
+rm -f *.o	TMVAClassification TMVAClassificationCategory TMVAClassificationApplication TMVAClassificationCategoryApplication TMVARegression TMVARegressionApplication TMVAMulticlass TMVAMulticlassApplication TMVAMultipleBackgroundExample TMVAGAexample TMVAGAexample2 
+-n Building TMVAClassification ... 
+g++ -O0 -ggdb -std=c++11  TMVAClassification.C  -I/opt/homebrew/Cellar/root/6.24.04/include/root  -L/opt/homebrew/Cellar/root/6.24.04/lib/root -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -stdlib=libc++ -lpthread -lm -ldl -lMLP -lMinuit -lTreePlayer -lTMVA -lTMVAGui -lXMLIO  -lMLP -lm  -g -o TMVAClassification
+Done
+
+==> Start TMVAClassification
+--- TMVAClassification       : Using siginput file: ./sig.root
+--- TMVAClassification       : Using bkginput file: ./bkg.root
+signal has 24191events for training 24472events for test
+background has 9270events for training 9052events for test
+starting dataloader:
+end dataloader
+DataSetInfo              : [dataset] : Added class "Signal"
+                         : Add Tree trainEvents of type Signal with 24191 events
+DataSetInfo              : [dataset] : Added class "Background"
+                         : Add Tree trainEvents of type Background with 9270 events
+                         : Add Tree testEvents of type Signal with 24472 events
+                         : Add Tree testEvents of type Background with 9052 events
+end weight setting
+start preparing
+end preparing
+start bookmethod
+Factory                  : Booking method: [1mBDT[0m
+                         : 
+                         : Building event vectors for type 0 Signal
+                         : Dataset[dataset] :  create input formulas for tree trainEvents
+                         : Building event vectors for type 1 Signal
+                         : Dataset[dataset] :  create input formulas for tree testEvents
+                         : Building event vectors for type 0 Background
+                         : Dataset[dataset] :  create input formulas for tree trainEvents
+                         : Building event vectors for type 1 Background
+                         : Dataset[dataset] :  create input formulas for tree testEvents
+DataSetFactory           : [dataset] : Number of events in input trees
+                         : Dataset[dataset] :     Signal     requirement: "trans_E < 4000 && trans_E > 1000 && Wjetscore < 0.9 && Zjetscore > 0.9"
+                         : Dataset[dataset] :     Signal          -- number of events passed: 3970   / sum of weights: 4.55025
+                         : Dataset[dataset] :     Signal          -- efficiency             : 0.0602625
+                         : Dataset[dataset] :     Background requirement: "trans_E < 4000 && trans_E > 1000 && Wjetscore < 0.9 && Zjetscore > 0.9"
+                         : Dataset[dataset] :     Background      -- number of events passed: 4422   / sum of weights: 60.2492
+                         : Dataset[dataset] :     Background      -- efficiency             : 0.293577
+                         : Dataset[dataset] :  you have opted for interpreting the requested number of training/testing events
+                         :  to be the number of events AFTER your preselection cuts
+                         : 
+                         : Dataset[dataset] :  you have opted for interpreting the requested number of training/testing events
+                         :  to be the number of events AFTER your preselection cuts
+                         : 
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 1975
+                         : Signal     -- testing events             : 1995
+                         : Signal     -- training and testing events: 3970
+                         : Dataset[dataset] : Signal     -- due to the preselection a scaling factor has been applied to the numbers of requested events: 0.0815815
+                         : Background -- training events            : 2185
+                         : Background -- testing events             : 2237
+                         : Background -- training and testing events: 4422
+                         : Dataset[dataset] : Background -- due to the preselection a scaling factor has been applied to the numbers of requested events: 0.241349
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : ---------------------------------------------------------------
+                         :            Hbbscore Hbbmass Zjetscore Zjetmass Zjettau2 trans_E
+                         :  Hbbscore:   +1.000  +0.114    +0.113   -0.080   -0.067  +0.051
+                         :   Hbbmass:   +0.114  +1.000    +0.015   -0.010   -0.076  +0.208
+                         : Zjetscore:   +0.113  +0.015    +1.000   -0.229   -0.176  -0.037
+                         :  Zjetmass:   -0.080  -0.010    -0.229   +1.000   +0.111  +0.245
+                         :  Zjettau2:   -0.067  -0.076    -0.176   +0.111   +1.000  -0.321
+                         :   trans_E:   +0.051  +0.208    -0.037   +0.245   -0.321  +1.000
+                         : ---------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : ---------------------------------------------------------------
+                         :            Hbbscore Hbbmass Zjetscore Zjetmass Zjettau2 trans_E
+                         :  Hbbscore:   +1.000  -0.085    +0.053   +0.028   -0.024  -0.008
+                         :   Hbbmass:   -0.085  +1.000    -0.028   -0.032   +0.084  +0.168
+                         : Zjetscore:   +0.053  -0.028    +1.000   -0.094   -0.122  -0.034
+                         :  Zjetmass:   +0.028  -0.032    -0.094   +1.000   +0.453  +0.254
+                         :  Zjettau2:   -0.024  +0.084    -0.122   +0.453   +1.000  -0.171
+                         :   trans_E:   -0.008  +0.168    -0.034   +0.254   -0.171  +1.000
+                         : ---------------------------------------------------------------
+DataSetFactory           : [dataset] :  
+                         : 
+end bookmethod
+starting training 
+Factory                  : [1mTrain all methods[0m
+Factory                  : [dataset] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'Hbbscore' <---> Output : variable 'Hbbscore'
+                         : Input : variable 'Hbbmass' <---> Output : variable 'Hbbmass'
+                         : Input : variable 'Zjetscore' <---> Output : variable 'Zjetscore'
+                         : Input : variable 'Zjetmass' <---> Output : variable 'Zjetmass'
+                         : Input : variable 'Zjettau2' <---> Output : variable 'Zjettau2'
+                         : Input : variable 'trans_E' <---> Output : variable 'trans_E'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'Hbbscore' <---> Output : variable 'Hbbscore'
+                         : Input : variable 'Hbbmass' <---> Output : variable 'Hbbmass'
+                         : Input : variable 'Zjetscore' <---> Output : variable 'Zjetscore'
+                         : Input : variable 'Zjetmass' <---> Output : variable 'Zjetmass'
+                         : Input : variable 'Zjettau2' <---> Output : variable 'Zjettau2'
+                         : Input : variable 'trans_E' <---> Output : variable 'trans_E'
+Factory                  : [dataset] : Create Transformation "P" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'Hbbscore' <---> Output : variable 'Hbbscore'
+                         : Input : variable 'Hbbmass' <---> Output : variable 'Hbbmass'
+                         : Input : variable 'Zjetscore' <---> Output : variable 'Zjetscore'
+                         : Input : variable 'Zjetmass' <---> Output : variable 'Zjetmass'
+                         : Input : variable 'Zjettau2' <---> Output : variable 'Zjettau2'
+                         : Input : variable 'trans_E' <---> Output : variable 'trans_E'
+Factory                  : [dataset] : Create Transformation "G" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'Hbbscore' <---> Output : variable 'Hbbscore'
+                         : Input : variable 'Hbbmass' <---> Output : variable 'Hbbmass'
+                         : Input : variable 'Zjetscore' <---> Output : variable 'Zjetscore'
+                         : Input : variable 'Zjetmass' <---> Output : variable 'Zjetmass'
+                         : Input : variable 'Zjettau2' <---> Output : variable 'Zjettau2'
+                         : Input : variable 'trans_E' <---> Output : variable 'trans_E'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'Hbbscore' <---> Output : variable 'Hbbscore'
+                         : Input : variable 'Hbbmass' <---> Output : variable 'Hbbmass'
+                         : Input : variable 'Zjetscore' <---> Output : variable 'Zjetscore'
+                         : Input : variable 'Zjetmass' <---> Output : variable 'Zjetmass'
+                         : Input : variable 'Zjettau2' <---> Output : variable 'Zjettau2'
+                         : Input : variable 'trans_E' <---> Output : variable 'trans_E'
+TFHandler_Factory        :  Variable         Mean         RMS   [        Min         Max ]
+                         : ----------------------------------------------------------------
+                         :  Hbbscore:    0.97210   0.029460   [    0.90039    0.99951 ]
+                         :   Hbbmass:     129.45     31.919   [     52.875     362.50 ]
+                         : Zjetscore:    0.95683   0.031232   [    0.90039    0.99951 ]
+                         :  Zjetmass:     110.79     28.377   [     51.094     384.25 ]
+                         :  Zjettau2:   0.073367   0.043619   [  0.0068092    0.34497 ]
+                         :   trans_E:     1540.7     578.88   [     1000.1     3989.7 ]
+                         : ----------------------------------------------------------------
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        :  Variable         Mean         RMS   [        Min         Max ]
+                         : ----------------------------------------------------------------
+                         :  Hbbscore:     33.122     1.0000   [     29.497     34.922 ]
+                         :   Hbbmass:     4.1268     1.0000   [     1.7371     11.466 ]
+                         : Zjetscore:     30.576     1.0000   [     27.930     33.017 ]
+                         :  Zjetmass:     3.7920     1.0000   [     1.6302     13.419 ]
+                         :  Zjettau2:     2.7675     1.0000   [   -0.20760     8.9512 ]
+                         :   trans_E:     2.6664     1.0000   [     1.7300     6.8995 ]
+                         : ----------------------------------------------------------------
+                         : Preparing the Principle Component (PCA) transformation...
+TFHandler_Factory        :  Variable         Mean         RMS   [        Min         Max ]
+                         : ----------------------------------------------------------------
+                         :  Hbbscore:    -21.614     578.88   [    -562.29     2427.3 ]
+                         :   Hbbmass:    0.85468     29.380   [    -273.91     69.047 ]
+                         : Zjetscore:     2.1100     30.988   [    -136.57     217.93 ]
+                         :  Zjetmass: -0.0018359   0.036713   [   -0.14936    0.21249 ]
+                         :  Zjettau2: -0.0051793   0.030598   [  -0.092330   0.083351 ]
+                         :   trans_E:  0.0024012   0.025486   [  -0.053551   0.088674 ]
+                         : ----------------------------------------------------------------
+                         : Preparing the Gaussian transformation...
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        :  Variable         Mean         RMS   [        Min         Max ]
+                         : ----------------------------------------------------------------
+                         :  Hbbscore:    0.25425     1.0000   [    -1.6834     3.5536 ]
+                         :   Hbbmass:  0.0016573     1.0000   [    -5.4438     5.7056 ]
+                         : Zjetscore:   0.081240     1.0000   [    -2.4977     4.3292 ]
+                         :  Zjetmass:   0.026879     1.0000   [    -5.0623     5.6300 ]
+                         :  Zjettau2:  0.0090951     1.0000   [    -3.8375     6.3629 ]
+                         :   trans_E:  -0.067243     1.0000   [    -4.2072     5.6613 ]
+                         : ----------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : ----------------------------------
+                         : Rank : Variable  : Separation
+                         : ----------------------------------
+                         :    1 : trans_E   : 4.830e-01
+                         :    2 : Hbbscore  : 3.990e-01
+                         :    3 : Zjetscore : 2.413e-01
+                         :    4 : Zjettau2  : 1.693e-01
+                         :    5 : Hbbmass   : 1.273e-01
+                         :    6 : Zjetmass  : 6.578e-02
+                         : ----------------------------------
+Factory                  : Train method: BDT for Classification
+                         : 
+BDT                      : #events: (reweighted) sig: 2080 bkg: 2080
+                         : #events: (unweighted) sig: 1975 bkg: 2185
+                         : Training 200 Decision Trees ... patience please
+                         : Elapsed time for training with 4160 events: [1;31m1.89 sec[0m         
+BDT                      : [dataset] : Evaluation of BDT on training sample (4160 events)
+                         : Elapsed time for evaluation of 4160 events: [1;31m0.0242 sec[0m       
+                         : Creating xml weight file: [0;36mdataset/weights/TMVAClassification_BDT.weights.xml[0m
+                         : Creating standalone class: [0;36mdataset/weights/TMVAClassification_BDT.class.C[0m
+                         : TMVA.root:/dataset/Method_BDT/BDT
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+BDT                      : Ranking result (top variable is best ranked)
+                         : -------------------------------------------
+                         : Rank : Variable  : Variable Importance
+                         : -------------------------------------------
+                         :    1 : trans_E   : 2.748e-01
+                         :    2 : Hbbmass   : 1.873e-01
+                         :    3 : Zjetscore : 1.770e-01
+                         :    4 : Hbbscore  : 1.528e-01
+                         :    5 : Zjetmass  : 1.374e-01
+                         :    6 : Zjettau2  : 7.081e-02
+                         : -------------------------------------------
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: [0;36mdataset/weights/TMVAClassification_BDT.weights.xml[0m
+end training
+starting testing
+Factory                  : [1mTest all methods[0m
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [dataset] : Evaluation of BDT on testing sample (4232 events)
+                         : Elapsed time for evaluation of 4232 events: [1;31m0.0215 sec[0m       
+end training
+starting evaluating
+Factory                  : [1mEvaluate all methods[0m
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            :  Variable         Mean         RMS   [        Min         Max ]
+                         : ----------------------------------------------------------------
+                         :  Hbbscore:    0.96167   0.029108   [    0.90039    0.99951 ]
+                         :   Hbbmass:     134.18     35.796   [     52.875     444.25 ]
+                         : Zjetscore:    0.94810   0.028492   [    0.90039    0.99951 ]
+                         :  Zjetmass:     115.91     30.606   [     51.094     402.00 ]
+                         :  Zjettau2:   0.088541   0.048359   [  0.0068283    0.32642 ]
+                         :   trans_E:     1248.5     309.29   [     1000.1     3986.0 ]
+                         : ----------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : dataset       BDT            : 0.973
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : dataset              BDT            : 0.724 (0.800)       0.922 (0.941)      0.982 (0.985)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:dataset          : Created tree 'TestTree' with 4232 events
+                         : 
+Dataset:dataset          : Created tree 'TrainTree' with 4160 events
+                         : 
+Factory                  : [1mThank you for using TMVA![0m
+                         : [1mFor citation information, please visit: http://tmva.sf.net/citeTMVA.html[0m
+end evaluating
+==> Wrote root file: TMVA.root
+==> TMVAClassification is done!
+--- Launch TMVA GUI to view input file: TMVA.root
+=== Note: inactive buttons indicate classifiers that were not trained, ===
+===       or functionalities that were not invoked during the training ===
+
+Processing GetFromTMVA.cpp...
+
+Processing Check.cpp...
+                         : Booking "BDT" of type "BDT" from ./dataset/weights/TMVAClassification_BDT.weights.xml.
+                         : Reading weight file: ./dataset/weights/TMVAClassification_BDT.weights.xml
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "BDT" of type: "BDT"
+initial  events : 4.55026 +- 0.0777531
+passing BDT     : 2.09788 +- 0.0512089
+passing BF      : 1.57935 +- 0.0439196
+passing both    : 1.34063 +- 0.0406236
+training events : 2.28282 +- 0.0560144
+passing BDT     : 1.06151 +- 0.0363943
+passing BF      : 0.771609 +- 0.0300909
+passing both    : 0.670334 +- 0.0280647
+testing  events : 2.26744 +- 0.0539252
+passing BDT     : 1.03637 +- 0.036025
+passing BF      : 0.807745 +- 0.0319917
+passing both    : 0.670293 +- 0.0293709
+
+Processing Checkbkg.cpp...
+                         : Booking "BDT" of type "BDT" from ./dataset/weights/TMVAClassification_BDT.weights.xml.
+                         : Reading weight file: ./dataset/weights/TMVAClassification_BDT.weights.xml
+<FATAL>                          : Dataset[Default] : You declared 8 variables in the Reader while there are 6 variables declared in the file
+***> abort program execution
+
+Processing draw.cpp...
+cirr2
+TMVA_read.root
+0x16da0ab10
+Xaxis bins : 10000
+cirr2
+TMVA_read.root
+0x16da0ab10
+Xaxis bins : 10000
+10000   10000
+Max Lsig : 3.5423 at 7854th bin    at0.689074    with 1.36567 signal,    0.00520911backgrounds. 
+Check if add Lsig1
+cirr2
+TMVA_read.root
+0x16da08c58
+Xaxis bins : 40
+cirr2
+TMVA_read.root
+0x16da08c58
+Xaxis bins : 40
+cirr2
+sigBDTresults.root
+0x16da06da0
+Xaxis bins : 1000
+cirr2
+bkgBDTresults.root
+0x16da06da0
+Xaxis bins : 1000
+2
+0   1    1
+1   1    1
+2   1    1
+3   1    1
+4   1    1
+5   1    1
+6   1    1
+7   1    1
+8   1    1
+9   1    1
+2
+0   1    1
+1   1    1
+2   1    1
+3   1    1
+4   1    1
+5   1    1
+6   1    1
+7   1    1
+8   1    1
+9   1    1

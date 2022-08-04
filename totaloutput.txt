@@ -1,0 +1,112 @@
+MaxDepth = 2    NTree = 10
+Max Lsig : 18.2755 at 8135th bin    at0.76045    with 31.1134 signal,    0.0540992backgrounds. 
+MaxDepth = 2    NTree = 20
+Max Lsig : 18.9911 at 7884th bin    at0.711786    with 35.2849 signal,    0.0795563backgrounds. 
+MaxDepth = 2    NTree = 30
+Max Lsig : 19.0808 at 7717th bin    at0.693757    with 34.6001 signal,    0.0669838backgrounds. 
+MaxDepth = 2    NTree = 40
+Max Lsig : 19.1124 at 7520th bin    at0.670989    with 36.9928 signal,    0.0994725backgrounds. 
+MaxDepth = 2    NTree = 50
+Max Lsig : 19.2498 at 7515th bin    at0.664773    with 36.5483 signal,    0.0859336backgrounds. 
+MaxDepth = 2    NTree = 75
+Max Lsig : 19.3739 at 7382th bin    at0.647913    with 36.9602 signal,    0.0861703backgrounds. 
+MaxDepth = 2    NTree = 100
+Max Lsig : 19.308 at 7355th bin    at0.63909    with 36.7153 signal,    0.0856719backgrounds. 
+MaxDepth = 2    NTree = 200
+Max Lsig : 19.158 at 7252th bin    at0.62244    with 35.8974 signal,    0.0808175backgrounds. 
+MaxDepth = 2    NTree = 300
+Max Lsig : 19.0267 at 7277th bin    at0.617605    with 33.9896 signal,    0.0616631backgrounds. 
+MaxDepth = 2    NTree = 400
+Max Lsig : 19.0189 at 7210th bin    at0.610277    with 34.1832 signal,    0.0642186backgrounds. 
+MaxDepth = 2    NTree = 500
+Max Lsig : 18.9827 at 7225th bin    at0.607863    with 33.1767 signal,    0.0541116backgrounds. 
+MaxDepth = 2    NTree = 600
+Max Lsig : 18.9721 at 7203th bin    at0.603986    with 33.1454 signal,    0.0541116backgrounds. 
+MaxDepth = 2    NTree = 700
+Max Lsig : 18.9526 at 7185th bin    at0.600895    with 33.129 signal,    0.0545492backgrounds. 
+MaxDepth = 2    NTree = 800
+Max Lsig : 18.9339 at 7180th bin    at0.598433    with 33.0737 signal,    0.0545492backgrounds. 
+MaxDepth = 3    NTree = 10
+Max Lsig : 18.8935 at 8358th bin    at0.808189    with 33.711 signal,    0.0630995backgrounds. 
+MaxDepth = 3    NTree = 20
+Max Lsig : 19.1878 at 7739th bin    at0.738206    with 39.1949 signal,    0.134633backgrounds. 
+MaxDepth = 3    NTree = 30
+Max Lsig : 19.2489 at 8039th bin    at0.749139    with 33.8046 signal,    0.0524378backgrounds. 
+MaxDepth = 3    NTree = 40
+Max Lsig : 19.3408 at 7908th bin    at0.732036    with 34.4449 signal,    0.0562202backgrounds. 
+MaxDepth = 3    NTree = 50
+Max Lsig : 19.5195 at 7746th bin    at0.717597    with 35.1851 signal,    0.0583403backgrounds. 
+MaxDepth = 3    NTree = 75
+Max Lsig : 19.4509 at 7614th bin    at0.699848    with 35.3963 signal,    0.0629974backgrounds. 
+MaxDepth = 3    NTree = 100
+Max Lsig : 19.2504 at 7621th bin    at0.695032    with 33.6938 signal,    0.0512778backgrounds. 
+MaxDepth = 3    NTree = 200
+Max Lsig : 19.0819 at 7480th bin    at0.671642    with 33.3319 signal,    0.05267backgrounds. 
+MaxDepth = 3    NTree = 300
+Max Lsig : 18.9547 at 7443th bin    at0.659603    with 32.6951 signal,    0.05backgrounds. 
+MaxDepth = 3    NTree = 400
+Max Lsig : 18.8176 at 7392th bin    at0.650832    with 32.2956 signal,    0.05backgrounds. 
+MaxDepth = 3    NTree = 500
+Max Lsig : 18.6958 at 7339th bin    at0.642705    with 32.6671 signal,    0.0578108backgrounds. 
+MaxDepth = 3    NTree = 600
+Max Lsig : 18.607 at 7335th bin    at0.637118    with 32.4055 signal,    0.0578108backgrounds. 
+MaxDepth = 3    NTree = 700
+Max Lsig : 18.5632 at 7334th bin    at0.632674    with 32.249 signal,    0.0574928backgrounds. 
+MaxDepth = 3    NTree = 800
+Max Lsig : 18.5448 at 7336th bin    at0.629226    with 32.0455 signal,    0.0557983backgrounds. 
+MaxDepth = 4    NTree = 10
+Max Lsig : 18.9441 at 8197th bin    at0.812451    with 35.5325 signal,    0.0852041backgrounds. 
+MaxDepth = 4    NTree = 20
+Max Lsig : 19.052 at 8001th bin    at0.777121    with 35.797 signal,    0.0841202backgrounds. 
+MaxDepth = 4    NTree = 30
+Max Lsig : 18.9988 at 7996th bin    at0.767228    with 33.6872 signal,    0.0591649backgrounds. 
+MaxDepth = 4    NTree = 40
+Max Lsig : 18.9637 at 7772th bin    at0.742898    with 35.6867 signal,    0.0865718backgrounds. 
+MaxDepth = 4    NTree = 50
+Max Lsig : 19.0616 at 7847th bin    at0.74039    with 34.1399 signal,    0.0621851backgrounds. 
+MaxDepth = 4    NTree = 75
+Max Lsig : 19.1507 at 7729th bin    at0.721395    with 34.332 signal,    0.0612942backgrounds. 
+MaxDepth = 4    NTree = 100
+Max Lsig : 18.9418 at 7672th bin    at0.711432    with 33.7798 signal,    0.062199backgrounds. 
+MaxDepth = 4    NTree = 200
+Max Lsig : 19.0403 at 7550th bin    at0.687608    with 33.111 signal,    0.051664backgrounds. 
+MaxDepth = 4    NTree = 300
+Max Lsig : 18.9886 at 7498th bin    at0.670893    with 33.2531 signal,    0.054736backgrounds. 
+MaxDepth = 4    NTree = 400
+Max Lsig : 18.9899 at 7482th bin    at0.659707    with 33.2569 signal,    0.054736backgrounds. 
+MaxDepth = 4    NTree = 500
+Max Lsig : 18.991 at 7458th bin    at0.649951    with 33.2619 signal,    0.0547549backgrounds. 
+MaxDepth = 4    NTree = 600
+Max Lsig : 18.9325 at 7429th bin    at0.642664    with 33.2451 signal,    0.0564494backgrounds. 
+MaxDepth = 4    NTree = 700
+Max Lsig : 18.8793 at 7403th bin    at0.636533    with 32.9318 signal,    0.0547549backgrounds. 
+MaxDepth = 4    NTree = 800
+Max Lsig : 18.7988 at 7390th bin    at0.631333    with 32.6946 signal,    0.0547549backgrounds. 
+MaxDepth = 5    NTree = 10
+Max Lsig : 18.3576 at 8696th bin    at0.847004    with 32.2153 signal,    0.0643372backgrounds. 
+MaxDepth = 5    NTree = 20
+Max Lsig : 18.5214 at 8551th bin    at0.814651    with 31.6904 signal,    0.052648backgrounds. 
+MaxDepth = 5    NTree = 30
+Max Lsig : 18.3911 at 8424th bin    at0.796167    with 31.3403 signal,    0.0529322backgrounds. 
+MaxDepth = 5    NTree = 40
+Max Lsig : 18.6346 at 8251th bin    at0.777083    with 32.1443 signal,    0.0540014backgrounds. 
+MaxDepth = 5    NTree = 50
+Max Lsig : 18.5613 at 8299th bin    at0.774161    with 30.5888 signal,    0.0407331backgrounds. 
+MaxDepth = 5    NTree = 75
+Max Lsig : 18.655 at 8211th bin    at0.754265    with 30.7135 signal,    0.0395233backgrounds. 
+MaxDepth = 5    NTree = 100
+Max Lsig : 18.5111 at 8162th bin    at0.741579    with 30.3113 signal,    0.0395233backgrounds. 
+MaxDepth = 5    NTree = 200
+Max Lsig : 18.3995 at 8015th bin    at0.710675    with 29.878 signal,    0.0384498backgrounds. 
+MaxDepth = 5    NTree = 300
+Max Lsig : 18.3497 at 7931th bin    at0.693038    with 29.3413 signal,    0.0350989backgrounds. 
+MaxDepth = 5    NTree = 400
+Max Lsig : 18.2815 at 7848th bin    at0.678135    with 29.1847 signal,    0.035336backgrounds. 
+MaxDepth = 5    NTree = 500
+Max Lsig : 18.2984 at 7737th bin    at0.665657    with 29.5705 signal,    0.0382006backgrounds. 
+MaxDepth = 5    NTree = 600
+Max Lsig : 18.3449 at 7648th bin    at0.655096    with 29.9389 signal,    0.0403185backgrounds. 
+MaxDepth = 5    NTree = 700
+Max Lsig : 18.4186 at 7589th bin    at0.646322    with 30.1437 signal,    0.0403185backgrounds. 
+MaxDepth = 5    NTree = 800
+Max Lsig : 18.351 at 7557th bin    at0.63976    with 30.073 signal,    0.0413794backgrounds. 
